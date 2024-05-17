@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sec1{
+    width: 100%;
+    /* height: 900px; */
+    background-color: white;
+    background-size:100% 100%;
+    padding-bottom: 15px ;
+}
+
+.sec1 .nav-link{
+    font-size: 20px;
+    color: #832222c4;
+}
+
+.sec1 .navbar-nav{
+    transition: all ease-in-out 0.3s;
+}
+.sec1 .navbar-nav :hover{
+    color: black !important
+}
+.sec1 .letsTalk{
+    font-weight: bold;
+    cursor: pointer;
+}
+.sec1 .containe{
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+.sec1 .containe .navBar{
+    margin: 0 30px 0 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    /* justify-content: center; */
+    margin-left: 29px;
+}
+.sec1 .row{
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+.sec2{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 ;
+}
+.sec2 p{
+    color:rgb(255 147 48);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.sec2 h2{
+    color:black;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding:  0 0 20px 0;
+}
+.sec2 .row{
+    margin:0px;
+    padding: 0px;
+
+}
+.sec2 .row .image{
+    padding-bottom: 15px;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+}
+.sec2 .row .image img {
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+.sec2 .row .text{
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: auto; */
+    padding: 0 0 0 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sec2 .row .text:hover{
+    color: rgb(255 147 48);
+    top: 80%;
+    opacity: 1;
+
+}
+.sec2 .row img:hover + .text {
+    top: 80%;
+    opacity: 1;
+}
+
+@media screen and (max-width:550px) {
+    .sec2 h2{
+        color:black;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        padding:  0 0 20px 0;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .sec2 .row .image img {
+        height: 210px;
+    }
+    .sec2 .row .text{
+        top: 85%;
+        align-items:start;
+        padding: 0 10px 0 10px;
+        font-size: 19px;
+    }
+    .sec2 .row .text:hover{
+        top: 70%;
+    }
+    .sec2 .row img:hover + .text {
+        top: 70%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+.sec5{
+    background: black;
+    color: white;
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec5 .containe{
+    width: 85%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec5 .row{
+    margin: 0;
+    padding:0
+}
+
+.sec5 .contact{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 20px 0px
+}
+
+.sec5 .row .text{
+
+}
+
+.sec5 .row .text p{
+    font-size: 50px;
+    font-weight: bold;
+}   
+.sec5 .row .text div{
+font-size: 19px;
+}
+
+.sec5 .row .text div span i{
+    padding-left: 8px;
+}
+.sec5 .row .email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 400px; */
+    padding: 15px;
+    border-radius: 12px;
+    border: 0.2px solid #ffffff70;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+.sec5 .row .email p{
+    font-size: 19px;
+    font-weight: bold;
+}
+.sec5 .row .email div{
+    font-size: 24px;
+    color: rgb(255 147 48);
+}
+.sec5 .row .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 400px; */
+    padding: 15px;
+    border-radius: 12px;
+    border: 0.2px solid #ffffff70;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+.sec5 .row .number p{
+    font-size: 19px;
+    font-weight: bold;
+}
+.sec5 .row .number div{
+    font-size: 24px;
+    color: rgb(255 147 48);
+}
+
+@media screen and (max-width:990px) {
+    .sec5 .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 37px
+    }
+    .sec5 .email, .sec5 .number{
+        margin-bottom: 20px !important;
+    }
+}
+@media screen and (max-width:770px) {
+    .sec5 .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 37px
+    }
+    .sec5 .email, .sec5 .number{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .sec5 .text p{
+        font-size: 30px !important;
+    }
+}
+.sec5 .name{
+    font-size: 8vw;
+    letter-spacing: 42px;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width:990px) {
+    .sec5 .name{
+        font-size: 8vw;
+        letter-spacing: 22px;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width:550px) {
+    .sec5 .name{
+        font-size: 8vw;
+        letter-spacing: 12px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.sec5 .rights{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:550px) {
+    .sec5 .rights{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec5 .rights div{
+        margin: auto;
+    }
+    .sec5 .rights .top{
+        margin: 10px auto;
+    }
+    
+}
